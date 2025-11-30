@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f5f7ff;
+            color: #222;
+        }
+
+        header {
+            background: #a71c84;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 50px;
+            background: white;
+        }
+
+        .hero-text {
+            width: 50%;
+        }
+
+        .hero-text h2 {
+            font-size: 40px;
+            color: #b01020;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .hero-text button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #8b26c9;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero-text button:hover {
+            background: #f1d118;
+        }
+
+        .hero-img img {
+            width: 430px;
+            border-radius: 10px;
+        }
+
+        .features {
+            padding: 60px 50px;
+        }
+
+        .features h2 {
+            text-align: center;
+            color: #2f98f4;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .feature-container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            width: 33%;
+            text-align: center;
+        }
+
+        .feature-box h3 {
+            color: #050f06;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #130501;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-text, .hero-img {
+                width: 100%;
+            }
+            .feature-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Landing Page</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Build Beautiful Landing Pages</h2>
+            <p>
+                A landing page is the perfect beginner-friendly project to learn HTML and CSS.
+                Master alignments, spacing, color palette, headers, footers, and visual layouts
+                while designing a stunning, creative webpage.
+            </p>
+            <button>Get Started</button>
+        </div>
+
+        <div class="hero-img">
+            <img src="landing-image.jpg" alt="Landing Page Illustration">
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Why This Project?</h2>
+
+        <div class="feature-container">
+            <div class="feature-box">
+                <h3>Easy to Learn</h3>
+                <p>Perfect for learning HTML, CSS, layout, and structure.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Improves Creativity</h3>
+                <p>Experiment with colors, spacing, fonts, and design ideas.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Professional Output</h3>
+                <p>Create a neat, beautiful landing page to showcase your skills.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2025 My Landing Page | All Rights Reserved
+    </footer>
+
+</body>
+</html>
